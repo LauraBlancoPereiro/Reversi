@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272419">
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="374dp"
+        android:layout_height="533dp"
+        android:background="#938A69"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Players take turns placing a tile on the board  The goal of each move in the game is to catch one or more of your opponent’s tiles between two of yours. When you catch the tiles of the oponent the color is reversed to make them yours.  The game ends when both players have placed all their tiles on the board, or when there are no more legal moves possible for either player. Whoever has the most tiles on the board is the winner."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inicio"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#938A69"
+        android:onClick="inicio"
+        android:text="INICIO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintVertical_bias="0.428" />
+</androidx.constraintlayout.widget.ConstraintLayout>
